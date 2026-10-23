@@ -7,6 +7,7 @@ import {
   type ViewStyle,
 } from 'react-native';
 
+
 import { Cristal, Espaciado, Paleta } from '@/constants/theme';
 
 import { Texto } from './texto';

@@ -67,7 +67,7 @@ src/app/
 │   ├── _layout.tsx             Stack con encabezado nativo
 │   ├── nuevo.tsx               → /reporte/nuevo
 │   ├── escanear.tsx            → /reporte/escanear
-│   ├── foto.tsx                → /reporte/foto
+│   ├── foto.tsx                → /reporte/fot![Texto alternativo](ruta/o/enlace/de/la/imagen.png)
 │   ├── ubicacion.tsx           → /reporte/ubicacion
 │   └── [id].tsx                → /reporte/[id]
 ├── permisos/
@@ -366,11 +366,36 @@ Y en todos los casos hay un camino alternativo, para que **nadie quede bloqueado
 
 Pendientes de tomar en la development build (se agrega una por cada punto):
 
-- [ ] Escáner en sus cuatro estados: cargando, concedido, preguntable y bloqueado.
-- [ ] Ubicación concedida y ubicación denegada (con el sector elegido a mano).
-- [ ] Foto elegida desde el selector del sistema.
-- [ ] Notificación local recibida ("Reporte resuelto").
+- [x] Escáner en sus cuatro estados: cargando, concedido, preguntable y bloqueado.
+  - Preguntable — pantalla previa con explicación y botón "Continuar":
+    ![Escáner: permiso preguntable](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.15%20(1).jpeg)
+  - Preguntable — diálogo del sistema:
+    ![Escáner: diálogo del sistema](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.16.jpeg)
+  - Bloqueado — botón "Abrir Ajustes" y alternativa de escribir el código a mano:
+    ![Escáner: permiso bloqueado](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.16%20(1).jpeg)
+  - [x] Ubicación concedida y ubicación denegada (con el sector elegido a mano).
+  - Denegada — ubicación bloqueada con el sector elegido a mano:
+    ![Ubicación denegada: sector a mano](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.16%20(3).jpeg)
+  - Matiz de ubicación aproximada (ubicación precisa desactivada en Ajustes):
+    ![Ubicación aproximada](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.17.jpeg)
+- [x] Foto elegida desde el selector del sistema.
+  - Pantalla "Adjuntar foto" con las dos opciones (cámara y selector del sistema):
+    ![Adjuntar foto: opciones](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.56.11.jpeg)
+  - Selector de imágenes del sistema abierto sin pedir permiso de galería:
+    ![Selector del sistema](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.56.11%20(1).jpeg)
+- [x] Notificación local recibida ("Reporte resuelto").
+  ![Notificación local: reporte resuelto](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.17%20(3).jpeg)
 - [ ] Panel de permisos antes y después de volver de los Ajustes del sistema.
+  - Panel de permisos de la app (cámara concedida, ubicación bloqueada, notificaciones preguntable):
+    ![Panel de permisos](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.17%20(1).jpeg)
+  - Ajustes del sistema: permisos de la app (cámara sin otorgar):
+    ![Ajustes: permisos de la app](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.15.jpeg)
+  - Ajustes del sistema: permiso de Cámara:
+    ![Ajustes: permiso de cámara](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.16%20(2).jpeg)
+  - Ajustes del sistema: permiso de Ubicación:
+    ![Ajustes: permiso de ubicación](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.17.jpeg)
+  - Ajustes del sistema: notificaciones de la app:
+    ![Ajustes: notificaciones](assets/images/capturas/WhatsApp%20Image%202026-10-22%20at%2023.38.17%20(2).jpeg)
 
 ---
 
